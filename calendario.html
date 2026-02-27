@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agenda Profissional 2026</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="app">
+
+<header class="topbar">
+    <div class="left">
+        <span class="menu">☰</span>
+        <h1>Agenda</h1>
+    </div>
+
+    <div class="search">
+        🔍 <input type="text" placeholder="Buscar eventos...">
+    </div>
+
+    <div class="right">
+        ❓ ⚙ ⬜  // para desenvolvimento de futuras funcionalidades...
+    </div>
+</header>
+
+<div class="month-nav">
+    <button onclick="changeMonth(-1)">◀</button>
+    <h2 id="monthYear"></h2>
+    <button onclick="changeMonth(1)">▶</button>
+</div>
+
+<div class="weekdays">
+    <div>Dom</div><div>Seg</div><div>Ter</div>
+    <div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+</div>
+
+<div id="calendar" class="calendar"></div>
+
+</div>
+
+<div id="eventModal" class="modal">
+    <div class="modal-content">
+        <h3>Novo Evento</h3>
+        <input type="text" id="eventTitle" placeholder="Título do evento">
+        <input type="color" id="eventColor" value="#4CAF50">
+        <button onclick="saveEvent()">Salvar</button>
+        <button onclick="closeModal()" class="cancel">Cancelar</button>
+    </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
+ 
