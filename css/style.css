@@ -136,3 +136,14 @@ body {
 .modal-content .cancel {
     background:#ccc;
 }
+
+@media (max-width: 600px) {
+    .app {
+        width:100%;
+        padding:10px;
+    }
+    
+    .search {
+        width:100%;
+    }
+}
